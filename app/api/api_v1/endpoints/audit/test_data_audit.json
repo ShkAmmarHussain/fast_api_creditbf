@@ -1,0 +1,225 @@
+{
+  "TransUnion": {
+    "bureau": "TransUnion",
+    "total_accounts": "11",
+    "delinquent_accounts": "1",
+    "derogatory_accounts": "4",
+    "no_of_collection": 0,
+    "no_of_inq": 1,
+    "no_of_pub_record": 2,
+    "credit_score": 494,
+    "positive": 4,
+    "negative": 7,
+    "revolving_credit": 0,
+    "credit_card_balance": 0,
+    "inquiry": [
+      {
+        "inquirydate": "2015-08-07",
+        "account_name": "HSBC"
+      }
+    ],
+    "pub_record": [
+      {
+        "date_filed": "2014-06-07",
+        "court_name": "Federal District"
+      },
+      {
+        "date_filed": "2014-06-08",
+        "court_name": "Federal District"
+      }
+    ],
+    "derogatory": [
+      {
+        "accnt_name": "DMCCB",
+        "issues": [
+          "collection_account",
+          "Bankruptcy"
+        ]
+      },
+      {
+        "accnt_name": "WELL FARG VS",
+        "issues": [
+          "collection_account",
+          "Bankruptcy"
+        ]
+      },
+      {
+        "accnt_name": "NATIONSCREDT",
+        "issues": [
+          "collection_account",
+          "status_charge_off"
+        ]
+      },
+      {
+        "accnt_name": "ASSOCIATES",
+        "issues": [
+          "collection_account",
+          "Bankruptcy"
+        ]
+      },
+      {
+        "accnt_name": "AFS / ACB",
+        "issues": [
+          "collection_account",
+          "Bankruptcy"
+        ]
+      },
+      {
+        "accnt_name": "GEMB/M WARD",
+        "issues": [
+          "collection_account",
+          "Bankruptcy"
+        ]
+      }
+    ]
+  },
+  "Equifax": {
+    "bureau": "Equifax",
+    "total_accounts": 2,
+    "delinquent_accounts": 1,
+    "derogatory_accounts": 0,
+    "no_of_collection": 0,
+    "no_of_inq": 21,
+    "no_of_pub_record": 3,
+    "credit_score": 471,
+    "positive": 1,
+    "negative": 1,
+    "revolving_credit": 0,
+    "credit_card_balance": 0,
+    "inquiry": [
+      {
+        "inquirydate": "2015-08-05",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-05-27",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-06",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-07",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-07",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-09-02",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-14",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-15",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-17",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-20",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-18",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-21",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-22",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-01-16",
+        "account_name": "DJ AUTO"
+      },
+      {
+        "inquirydate": "2015-08-23",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-25",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-28",
+        "account_name": "EFXSQA"
+      },
+      {
+        "inquirydate": "2015-08-28",
+        "account_name": "LENDMARK"
+      },
+      {
+        "inquirydate": "2015-08-28",
+        "account_name": "LENDMARK"
+      },
+      {
+        "inquirydate": "2015-08-28",
+        "account_name": "LENDMARK"
+      },
+      {
+        "inquirydate": "2015-08-28",
+        "account_name": "EFXSQA"
+      }
+    ],
+    "pub_record": [
+      {
+        "date_filed": "2014-07-01",
+        "court_name": "Federal"
+      },
+      {
+        "date_filed": "2011-06-01",
+        "court_name": "Federal"
+      }
+    ],
+    "derogatory": [
+      {
+        "accnt_name": "FRIEDMAN'S",
+        "issues": [
+          "collection_account",
+          "late_payments: 9"
+        ]
+      }
+    ]
+  },
+  "Experian": {
+    "bureau": "Experian",
+    "total_accounts": 23,
+    "delinquent_accounts": 0,
+    "derogatory_accounts": 0,
+    "no_of_collection": 5,
+    "no_of_inq": 0,
+    "no_of_pub_record": 0,
+    "credit_score": 747,
+    "positive": 23,
+    "negative": 0,
+    "revolving_credit": 5575,
+    "credit_card_balance": 7236,
+    "inquiry": [],
+    "pub_record": [],
+    "derogatory": [
+      {
+        "accnt_name": "BANK",
+        "issues": [
+          "collection_account"
+        ]
+      },
+      {
+        "accnt_name": "1ST VICTORIA NATIONAL",
+        "issues": [
+          "collection_account"
+        ]
+      }
+    ]
+  }
+}

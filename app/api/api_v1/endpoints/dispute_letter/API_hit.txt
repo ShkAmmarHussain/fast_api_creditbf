@@ -1,0 +1,16 @@
+{
+  "personal_info": {
+    "first_name": "Ammar",
+    "last_name": "Hussain",
+    "address": "ajfkafa",
+    "ssn": "12538126387",
+    "dob": "12/3/2342"
+  },
+  "bureau_info": {
+    "name": "transunion",
+    "address": "afafkjasm"
+  },
+  "dispute_info": {
+    "dispute": "Wrong name mentioned in acc: 123124"
+  }
+}

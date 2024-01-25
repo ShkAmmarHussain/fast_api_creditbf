@@ -1,0 +1,36 @@
+
+from fastapi import FastAPI, UploadFile, HTTPException
+from audit import json2dict
+import os
+
+app = FastAPI()
+path = os.getcwd().replace("//", "/")
+
+@app.post("/audit/")
+async def process_json(report: UploadFile):
+    try:
+        if not report.filename.endswith(".json"):
+            raise HTTPException(status_code=400, detail="Invalid file format. Only JSON files are allowed.")
+        
+        try:
+            json_path = f"{path}/{report.filename}"
+            with open(json_path, "wb") as f:
+                f.write(report.file.read())
+        
+        except Exception as e:
+            raise HTTPException(status_code=500, detail="No file found: " + str(e))    
+    
+        try:
+            trns, equif, exper = json2dict(json_path)
+            return {
+                "TransUnion": trns,
+                "Equifax": equif,
+                "Experian": exper
+            }
+        except Exception as e:
+            raise HTTPException(status_code=500, detail="Error processing JSON data: " + str(e))
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Error handling file upload: " + str(e))
+    finally:
+        os.remove(json_path)
