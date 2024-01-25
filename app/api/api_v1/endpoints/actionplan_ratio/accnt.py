@@ -84,15 +84,18 @@ def details(path_json):
         ttl_late = 0
 
         try:
-            late = acc['Tradeline']['GrantedTrade']
+            try:
+                late = acc['Tradeline']['GrantedTrade']
+            except:
+                late = acc['Tradeline'][-1]['GrantedTrade']
             ttl_late = int(late['late90Count']) + int(late['late60Count']) + int(late['late30Count'])
         except:
             ttl_late = 0
 
-
+        print("1")
         if type(acc['Tradeline']) == type([]):
-            acc['Tradeline'] = acc['Tradeline'][0]
-
+            acc['Tradeline'] = acc['Tradeline'][-1]
+        print("2")
         try:
             bureau = acc['Tradeline']['bureau']
         except:

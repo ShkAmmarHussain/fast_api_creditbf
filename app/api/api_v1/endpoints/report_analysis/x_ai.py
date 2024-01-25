@@ -27,7 +27,7 @@ import pandas as pd
 
 def weights(bureau,X):
     weight = {}
-    explainer = joblib.load('shap_explainer.pkl')
+    explainer = joblib.load('app/api/api_v1/endpoints/report_analysis/shap_explainer.pkl')
     
     # Reshape example_data_point into a matrix with one row
     bureau = bureau.reshape(1, -1)

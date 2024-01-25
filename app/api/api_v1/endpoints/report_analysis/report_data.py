@@ -251,7 +251,7 @@ def report_data(path_json):
     for acc in accnts:
         tmp_derog = {}
         if type(acc['Tradeline']) == type([]):
-            acc['Tradeline'] = acc['Tradeline'][0]
+            acc['Tradeline'] = acc['Tradeline'][-1]
 
 
         stat = False

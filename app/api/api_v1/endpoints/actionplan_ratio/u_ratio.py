@@ -25,6 +25,9 @@ def smartcredit_ratio(report):
     tmp = []
     for acc in accnts:
         acc_type = acc['accountTypeSymbol']
+        
+        if type(acc['Tradeline']) == type([]):
+            acc['Tradeline'] = acc['Tradeline'][-1]
         acc_status = acc['Tradeline']['OpenClosed']['symbol']
         if acc_type.lower() == 'r' and acc_status.lower() == 'o':
             tmp_data = create_suggestion()
